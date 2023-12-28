@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Fifth Assignment</title>
+        <link rel="icon" href="https://cdn.icon-icons.com/icons2/1511/PNG/96/starfavoriteblackcircularinterfacebutton_104788.png">
+        <style>
+          body{
+            margin: 0;
+            background-image: url("https://images.pexels.com/photos/5185717/pexels-photo-5185717.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+          }  
+          section{
+            text-align: center;
+            margin-top: 100px;
+            color: white;
+          }
+          section div{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 -2px;
+          }
+          #aa{
+            height: 400px;
+            width: 400px;
+            overflow: hidden;
+          }
+          #bb{
+            height: 377px;
+            width: 330px;
+            text-align: left;
+            padding: 8px 40px 15px 30px;
+            background-color: rgb(39, 55, 70);
+          }
+          #aa>img{
+            height: 100%;
+          }
+          #bb input{
+            color: white;
+            height: 40px;
+            margin: 12px 0;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgb(202, 202, 202);
+            display: block;
+            width: 100%;
+            outline: none;
+          }
+          #bb input::placeholder{
+            color: rgb(202, 202, 202);
+          }
+          #bb button{
+            background-color: rgb(39, 153, 218);
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 1px solid rgb(15, 90, 134);
+          }
+          #bb button:hover{
+            background-color: rgb(20, 107, 157);
+          }
+          #bb a{
+            color: rgb(202, 202, 202);
+            margin-left: 20px;
+          }
+          #bb a:hover{
+            color: white;
+          }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="aa">
+              <img src="https://images.pexels.com/photos/1493080/pexels-photo-1493080.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <div id="bb">
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" pattern="[a-zA-Z ]+" maxlength="50" placeholder="Full Name" required/>
+                    <input type="email" placeholder="Email Address" required/>
+                    <input type="tel" pattern="[0-9]+" maxlength="10" minlength="10" placeholder="Phone" required/>
+                    <input type="password" maxlength="20" minlength="6" placeholder="Password" required/>
+                    <input type="password" maxlength="20" minlength="6" placeholder="Confirm Password" required/>
+                    <button>SignUp Now</button>
+                    <a href="">I have an account</a>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
